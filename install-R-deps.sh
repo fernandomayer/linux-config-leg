@@ -46,11 +46,12 @@ if [ $opcao -eq 1 ] ; then
 fi
 
 echo -------------------------------------------------------------------
-echo Instalar demais dependências do R? [ 1/0 ]
+echo Instalar demais dependências do R e ESS? [ 1/0 ]
 echo -------------------------------------------------------------------
 read opcao
 if [ $opcao -eq 1 ] ; then
     sudo apt-get build-dep -y r-base
+    sudo apt-get install ess
 fi
 
 echo -------------------------------------------------------------------
