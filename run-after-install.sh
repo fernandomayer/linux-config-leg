@@ -93,6 +93,15 @@ if [ $opcao -eq 1 ] ; then
 fi
 
 echo -------------------------------------------------------------------
+echo Instalar git e ssh? [ 1/0 ]
+echo -------------------------------------------------------------------
+read opcao
+if [ $opcao -eq 1 ] ; then
+    sudo apt-get install -y git git-core git-man git-gui git-doc \
+	ssh openssh-server openssh-client
+fi
+
+echo -------------------------------------------------------------------
 echo Instalar lm-sensors? [ 1/0 ]
 echo -------------------------------------------------------------------
 read opcao
